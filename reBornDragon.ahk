@@ -75,7 +75,20 @@ Return
     If GetKeyState("CapsLock","t")
         Send, {BackSpace}
     else
-        Send x
+        Send X
+Return
+
+$d::
+    If GetKeyState("CapsLock","t"){
+        Send, {End}
+        Send, {LShift Down}
+        Send, {Up}
+        Send, {End}
+        Send, {LShift Up}
+        Send, ^x
+    }
+    else
+        Send d
 Return
 
 $o::
@@ -113,19 +126,6 @@ $y::
         Send y
 Return
 
-$d::
-    If GetKeyState("CapsLock","t"){
-        Send, {End}
-        Send, {LShift Down}
-        Send, {Up}
-        Send, {End}
-        Send, {LShift Up}
-        Send, ^x
-    }
-    else
-        Send d
-Return
-
 $v::
     If GetKeyState("CapsLock","t"){
         If GetKeyState("LShift","Down"){
@@ -161,6 +161,13 @@ $e::
         Send e
 Return
 
+$b::
+    If GetKeyState("CapsLock","t")
+        Send ^{Left}
+    else
+        Send b
+Return
+
 $g::
     If GetKeyState("CapsLock","t")
         Send ^{Home}
@@ -171,14 +178,7 @@ Return
     If GetKeyState("CapsLock","t")
         Send ^{End}
     else
-        Send g
-Return
-
-$b::
-    If GetKeyState("CapsLock","t")
-        Send ^{Left}
-    else
-        Send b
+        Send G
 Return
 
 ; Windows Kep To FlowLauncher
