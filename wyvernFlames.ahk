@@ -2,6 +2,7 @@ Space::Space
 RAlt::Enter
 
 ; Spaace Nagic Key For Virtual Windows
+Space & `::showAllVirtualDesktop()
 
 Space & Numpad1::switchDesktopByNumber(1)
 Space & Numpad2::switchDesktopByNumber(2)
@@ -25,12 +26,22 @@ Space & 9::switchDesktopByNumber(9)
 
 Space & j::switchDesktopToLeft()
 Space & k::switchDesktopToRight()
+
 Space & o::createVirtualDesktop()
 Space & x::deleteVirtualDesktop()
 
+Space & q::MoveCurrentWindowToDesktop(1)
+Space & w::MoveCurrentWindowToDesktop(2)
+Space & e::MoveCurrentWindowToDesktop(3)
+Space & r::MoveCurrentWindowToDesktop(4)
+Space & t::MoveCurrentWindowToDesktop(5)
+Space & y::MoveCurrentWindowToDesktop(6)
+Space & u::MoveCurrentWindowToDesktop(7)
+Space & i::MoveCurrentWindowToDesktop(8)
+Space & o::MoveCurrentWindowToDesktop(9)
+
 Space & l::MoveCurrentWindowToRightDesktop()
 Space & h::MoveCurrentWindowToLeftDesktop()
-Space & `::showAllVirtualDesktop()
 
 LWin & tab::switchDesktopToLastOpened()
 
