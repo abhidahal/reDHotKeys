@@ -1,4 +1,4 @@
-<h1> 🔥reBornDragon</h1>
+<h1> 🐉reBornDragon</h1>
 
 **reBornDragon** is a keyboard script that focuses on boosting productivity on Windows by giving similar features of vim and Tmux which are popular on linux and Windows key remapped to flow launcer hotkey (Alt + Space) and other productivity Hotkeys. This script gives Magic functions to space bar which controls the virtual windows screens and Magic Toggle function for CapsLock which toggles vim like command mode. This script was made for Redragon K596 keyboard but will work with any keyboard.
 
@@ -40,7 +40,8 @@ CapsLock Toggle Action | Keys(After Capslock Toggle)
 **Navigating** Cursor position|<kbd>E</kbd> = <kbd>End of the word</kbd><br><kbd>B</kbd> = <kbd>BEginning of the word</kbd>
 **Cursor** Placement into normal mode<br>*(going back to normal mode with cursor position )*|<kbd>A</kbd> = <kbd>End of the current letter</kbd><br><kbd>I</kbd> = <kbd>In the current position</kbd>
 
-> Note : CapsLock will toogle these commands, so when caps is on these keys will act as above<br>YOU WILL NOT BE ABLE TO USE THE NORMAL CAPSLOCK FUNCTIONALITY
+> Note : CapsLock will toogle these commands, so when caps is on these keys will act as above.
+> YOU WILL NOT BE ABLE TO USE THE NORMAL CAPSLOCK FUNCTIONALITY
 
 #
 
@@ -67,3 +68,10 @@ Other  Action| Keys
 --- | :-:
 **Terminate** curret active Application|<kbd>Alt</kbd> + <kbd>X</kbd>
 **Psudo** Enter Key|<kbd>Right Alt</kbd> 
+
+## 🐞 Bugs
+- Keys not working on windows emoji popup ie (<kbd>Win</kbd> + <kbd>.</kbd> )
+
+## ✨ Thanks
+- pmb6tz for his work at [windows-desktop-switcher](https://github.com/pmb6tz/windows-desktop-switcher)
+- [AutoHotKeys Board](https://www.autohotkey.com/board/)
