@@ -71,7 +71,7 @@ $x::
         Send x
 Return
 
-+X::
+LShift & x::
     If GetKeyState("CapsLock","t")
         Send, {BackSpace}
     else
@@ -174,11 +174,12 @@ $g::
     else
         Send g
 Return
-+g::
+LShift & g::
     If GetKeyState("CapsLock","t")
         Send ^{End}
     else
         Send G
+
 Return
 
 ; Windows Kep To FlowLauncher
