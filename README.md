@@ -17,8 +17,8 @@ Space Action | Keys.
 **Switch** to virtual desktop **1, 2, etc.**<br>*(you can also use the Numpad)*|<kbd>Space</kbd> + <kbd>1</kbd><br><kbd>Space</kbd> + <kbd>2</kbd><br>...<br><kbd>Space</kbd> + <kbd>9</kbd>
 **Switch** to the virtual desktop on the **left**<br>*(auto-cycles from the first to the last desktop)*|<kbd>Space</kbd> + <kbd>J</kbd>
 **Switch** to the virtual desktop on the **right**<br>*(auto-cycles from the last to the first desktop)*|<kbd>Space</kbd> + <kbd>K</kbd>
-**Create** a new virtual desktop|**<kbd>Space</kbd> + <kbd>O</kbd>**
-**Delete** the current virtual desktop|<kbd>Space</kbd> + <kbd>X</kbd>
+**Create** a new virtual desktop|**<kbd>Space</kbd> + <kbd>+</kbd>**
+**Delete** the current virtual desktop|<kbd>Space</kbd> + <kbd>-</kbd>
 **Move** the current window to another desktop, then switch to it<br>*Keys <kbd>Q</kbd>, <kbd>W</kbd>, etc. correspond to **1st, 2nd, etc.** desktops*|<kbd>Space</kbd> + <kbd>Q</kbd><br><kbd>Space</kbd> + <kbd>W</kbd><br>...<br><kbd>Space</kbd> + <kbd>O</kbd>
 **Move** the current window to the previous or the next desktop, then switch to it|<kbd>Space</kbd> + <kbd>H</kbd><br><kbd>Space</kbd> + <kbd>L</kbd>
 **Dispaly** all the virtual windows opened |<kbd>Space</kbd> + <kbd>`</kbd>

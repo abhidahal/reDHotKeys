@@ -27,8 +27,8 @@ Space & 9::switchDesktopByNumber(9)
 Space & j::switchDesktopToLeft()
 Space & k::switchDesktopToRight()
 
-Space & o::createVirtualDesktop()
-Space & x::deleteVirtualDesktop()
+Space & +::createVirtualDesktop()
+Space & -::deleteVirtualDesktop()
 
 Space & q::MoveCurrentWindowToDesktop(1)
 Space & w::MoveCurrentWindowToDesktop(2)
