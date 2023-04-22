@@ -258,12 +258,36 @@ AdjustScreenBrightness(step) {
     }
 }
 
+toggleScrollOrMouseY(step){
+    If GetKeyState("ScrollLock","t")
+        MouseMove, 0, %step%, 50, R
+    else
+        If step > 0
+            MouseClick,WheelUp,,,1,0,D,R
+        else
+            MouseClick,WheelDown,,,1,0,D,R
+    Return
+}
+
+toggleScrollOrMouseX(step){
+    If GetKeyState("ScrollLock","t")
+        MouseMove, %step%,0, 50, R
+    else
+        If step > 0
+            AdjustScreenBrightness(step)
+        else
+            AdjustScreenBrightness(step)
+    Return
+}
+mouseClick(){
+    Click
+}
+; Spaace Nagic Key For Virtual Windows
+
 ProcessExist(Name){
     Process,Exist,%Name%
     return Errorlevel
 }
-
-; Spaace Nagic Key For Virtual Windows
 
 showAllVirtualDesktop(){
     Send, {LWin Down}

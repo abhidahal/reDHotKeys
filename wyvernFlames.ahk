@@ -2,7 +2,7 @@ Space::Space
 RAlt::Enter
 
 ; Spaace Nagic Key For Virtual Windows
-Space & `::showAllVirtualDesktop() 
+Space & `::showAllVirtualDesktop()
 
 Space & Numpad1::switchDesktopByNumber(1)
 Space & Numpad2::switchDesktopByNumber(2)
@@ -47,10 +47,10 @@ Space & tab::switchDesktopToLastOpened()
 
 ; Redragon Volume Knob
 
-!Volume_Up::MouseClick,WheelUp,,,1,0,D,R
-!Volume_Down::MouseClick,WheelDown,,,1,0,D,R
-^Volume_Down::AdjustScreenBrightness(-20)
-^Volume_Up::AdjustScreenBrightness(20)
+^Volume_Down::toggleScrollOrMouseY(30)
+^Volume_Up::toggleScrollOrMouseY(-30)
+!Volume_Down::toggleScrollOrMouseX(-30)
+!Volume_Up::toggleScrollOrMousex(30)
 
 ; Windows Kep To FlowLauncher
 
@@ -59,3 +59,4 @@ LWin::winToFlowLauncher()
 
 ; CapsLock Vim Toggle
 CapsLock::vimToggleModeOnHold()
+Pause::mouseClick()
