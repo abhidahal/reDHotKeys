@@ -41,7 +41,8 @@ CapsLock Toggle Action | Keys(Holding Capslock)
 **Navigating** Cursor position|<kbd>E</kbd> = <kbd>End of the word</kbd><br><kbd>B</kbd> = <kbd>BEginning of the word</kbd>
 **Cursor** Placement into normal mode<br>*(going back to normal mode with cursor position )*|<kbd>A</kbd> = <kbd>End of the current letter</kbd><br><kbd>I</kbd> = <kbd>In the current position</kbd><br><kbd>0</kbd> = <kbd>In the Beginning of the line</kbd><br><kbd>^</kbd> = <kbd>In the End of the line</kbd>
 
-> Note : CapsLock will toogle these commands, so when caps is on these keys will act as above<br>YOU WILL NOT BE ABLE TO USE THE NORMAL CAPSLOCK FUNCTIONALITY
+> Note : CapsLock will toogle these commands, so when caps is on these keys will act as above.
+> YOU WILL NOT BE ABLE TO USE THE NORMAL CAPSLOCK FUNCTIONALITY
 
 #
 
@@ -68,3 +69,10 @@ Other  Action| Keys
 --- | :-:
 **Terminate** curret active Application|<kbd>Alt</kbd> + <kbd>X</kbd>
 **Psudo** Enter Key|<kbd>Right Alt</kbd> 
+
+## 🐞 Bugs
+- Keys not working on windows emoji popup ie (<kbd>Win</kbd> + <kbd>.</kbd> )
+
+## ✨ Thanks
+- pmb6tz for his work at [windows-desktop-switcher](https://github.com/pmb6tz/windows-desktop-switcher)
+- [AutoHotKeys Board](https://www.autohotkey.com/board/)
