@@ -1,6 +1,6 @@
 <h1> 🔥reBornDragon</h1>
 
-**reBornDragon** is a keyboard script that focuses on boosting productivity on Windows by giving similar features of vim and Tmux which are popular on linux and Windows key remapped to flow launcer hotkey (Alt + Space) and other productivity Hotkeys. This script gives Magic functions to space bar which controls the virtual windows screens and Magic Toggle function for CapsLock which toggles vim like command mode. This script was made for Redragon K596 keyboard but will work with any keyboard.
+**reBornDragon** is a keyboard script that focuses on boosting productivity on Windows by giving similar features of vim and Tmux which are popular on linux and Windows key remapped to flow launcer hotkey (Alt + Space) and other productivity Hotkeys. This script gives Magic functions to space bar which controls the virtual windows screens and Magic Hold function for CapsLock which toggles vim like command mode. This script was made for Redragon K596 keyboard but will work with any keyboard.
 
 ## ⚙️ Installation
 
@@ -17,28 +17,29 @@ Space Action | Keys.
 **Switch** to virtual desktop **1, 2, etc.**<br>*(you can also use the Numpad)*|<kbd>Space</kbd> + <kbd>1</kbd><br><kbd>Space</kbd> + <kbd>2</kbd><br>...<br><kbd>Space</kbd> + <kbd>9</kbd>
 **Switch** to the virtual desktop on the **left**<br>*(auto-cycles from the first to the last desktop)*|<kbd>Space</kbd> + <kbd>J</kbd>
 **Switch** to the virtual desktop on the **right**<br>*(auto-cycles from the last to the first desktop)*|<kbd>Space</kbd> + <kbd>K</kbd>
+**Switch back** to the last desktop used|<kbd>Space</kbd> + <kbd>Tab</kbd>
 **Create** a new virtual desktop|**<kbd>Space</kbd> + <kbd>+</kbd>**
 **Delete** the current virtual desktop|<kbd>Space</kbd> + <kbd>-</kbd>
 **Move** the current window to another desktop, then switch to it<br>*Keys <kbd>Q</kbd>, <kbd>W</kbd>, etc. correspond to **1st, 2nd, etc.** desktops*|<kbd>Space</kbd> + <kbd>Q</kbd><br><kbd>Space</kbd> + <kbd>W</kbd><br>...<br><kbd>Space</kbd> + <kbd>O</kbd>
 **Move** the current window to the previous or the next desktop, then switch to it|<kbd>Space</kbd> + <kbd>H</kbd><br><kbd>Space</kbd> + <kbd>L</kbd>
 **Dispaly** all the virtual windows opened |<kbd>Space</kbd> + <kbd>`</kbd>
-**Switch back** to the last desktop used|<kbd>Win</kbd> + <kbd>Tab</kbd>
 
 > Note : space Key function normally if it is not pressed together with the above hot keys
 
 #
 
-### # Magic CapsLock Toggle Functions
+### # Magic CapsLock Functions
 
-CapsLock Toggle Action | Keys(After Capslock Toggle)
+CapsLock Toggle Action | Keys(Holding Capslock)
 --- | :-:
 **Simulate** arrow keys|<kbd>J</kbd> = <kbd>↓</kbd><br><kbd>K</kbd> = <kbd>↑</kbd><br><kbd>H</kbd> = <kbd>←</kbd><br><kbd>H</kbd> = <kbd>→</kbd>
-**Enter** in a new line|<kbd>O</kbd>
+**Enter** in the next line<br>**Enter** in the previous line|<kbd>O<br>(double)O</kbd>
+**Navigating** to the bottom of the page<br>**Navigating** to the top of the page|<kbd>G<br>(double)G</kbd>
 **Undo** and **Redo**  |<kbd>U</kbd> = <kbd>Undo</kbd><br><kbd>R</kbd> = <kbd>Redo</kbd>
 **Copy** and **Paste** |<kbd>Y</kbd> = <kbd>Copy</kbd><br><kbd>P</kbd> = <kbd>Paste</kbd>
-**Simulate** delete and backspace<br>*(While deleting whole line it copies it to clipboard)*|<kbd>X</kbd> = <kbd>Delete</kbd><br><kbd>shift + X</kbd> = <kbd>Backspace</kbd><br><kbd>D</kbd> = <kbd>Delete Whole Line</kbd>
+**Simulate** delete and backspace<br>*(While deleting whole line it copies it to clipboard)*|<kbd>X</kbd> = <kbd>Delete</kbd><br><kbd>Z</kbd> = <kbd>Backspace</kbd><br><kbd>D</kbd> = <kbd>Delete Whole Line</kbd><br><kbd>(double)c</kbd> = <kbd>Delete Whole Line and stay on the same line</kbd>
 **Navigating** Cursor position|<kbd>E</kbd> = <kbd>End of the word</kbd><br><kbd>B</kbd> = <kbd>BEginning of the word</kbd>
-**Cursor** Placement into normal mode<br>*(going back to normal mode with cursor position )*|<kbd>A</kbd> = <kbd>End of the current letter</kbd><br><kbd>I</kbd> = <kbd>In the current position</kbd>
+**Cursor** Placement into normal mode<br>*(going back to normal mode with cursor position )*|<kbd>A</kbd> = <kbd>End of the current letter</kbd><br><kbd>I</kbd> = <kbd>In the current position</kbd><br><kbd>0</kbd> = <kbd>In the Beginning of the line</kbd><br><kbd>^</kbd> = <kbd>In the End of the line</kbd>
 
 > Note : CapsLock will toogle these commands, so when caps is on these keys will act as above<br>YOU WILL NOT BE ABLE TO USE THE NORMAL CAPSLOCK FUNCTIONALITY
 

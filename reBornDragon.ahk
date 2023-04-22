@@ -3,7 +3,7 @@
 #NoEnv
 #KeyHistory 0
 SetWorkingDir %A_ScriptDir%
-; SetCapsLockState, AlwaysOff
+SetCapsLockState, AlwaysOff
 SendMode Input
 
 DesktopCount := 2
@@ -24,12 +24,12 @@ return
 
 ; CapsLock Vim Toggle
 
-vimToggleModeOnPress(){
-    KeyWait, CapsLock, T0.15
+vimToggleModeOnHold(){
+    KeyWait, CapsLock, T0.4
     If !ErrorLevel
         send, {Esc}
     Else
-        If GetKeyState("CapsLock","t")
+        If GetKeyState("CapsLock","p")
             SetCapsLockState, Off
         else
             SetCapsLockState, On
@@ -37,49 +37,49 @@ vimToggleModeOnPress(){
 }
 
 $k::
-    If GetKeyState("CapsLock","t")
+    If GetKeyState("CapsLock","p")
         Send {Up}
     else
         Send k
 Return
 
 $h::
-    If GetKeyState("CapsLock","t")
+    If GetKeyState("CapsLock","p")
         Send {Left}
     else
         Send h
 Return
 
 $j::
-    If GetKeyState("CapsLock","t")
+    If GetKeyState("CapsLock","p")
         Send {Down}
     else
         Send j
 Return
 
 $l::
-    If GetKeyState("CapsLock","t")
+    If GetKeyState("CapsLock","p")
         Send {Right}
     else
         Send l
 Return
 
 $x::
-    If GetKeyState("CapsLock","t")
+    If GetKeyState("CapsLock","p")
         Send, {Delete}
     else
         Send x
 Return
 
-LShift & x::
-    If GetKeyState("CapsLock","t")
+$z::
+    If GetKeyState("CapsLock","p")
         Send, {BackSpace}
     else
-        Send X
+        Send z
 Return
 
 $d::
-    If GetKeyState("CapsLock","t"){
+    If GetKeyState("CapsLock","p"){
         Send, {End}
         Send, {LShift Down}
         Send, {Up}
@@ -92,42 +92,49 @@ $d::
 Return
 
 $o::
-    If GetKeyState("CapsLock","t")
-        Send {End}{Enter}
+
+    If GetKeyState("CapsLock","p"){
+        KeyWait, o			; wait for z to be released
+        KeyWait, o, D T0.1		; and pressed again within 0.2 seconds
+        If ErrorLevel 			; timed-out (only a single press)
+            Send {End}{Enter}
+        Else
+            Send {Up}{End}{Enter}
+    }
     else
         Send o
 Return
 
 $u::
-    If GetKeyState("CapsLock","t")
+    If GetKeyState("CapsLock","p")
         Send ^z
     else
         Send u
 Return
 
 $r::
-    If GetKeyState("CapsLock","t")
+    If GetKeyState("CapsLock","p")
         Send ^+z
     else
         Send r
 Return
 
 $p::
-    If GetKeyState("CapsLock","t")
+    If GetKeyState("CapsLock","p")
         Send ^v
     else
         Send p
 Return
 
 $y::
-    If GetKeyState("CapsLock","t")
+    If GetKeyState("CapsLock","p")
         Send ^c
     else
         Send y
 Return
 
 $v::
-    If GetKeyState("CapsLock","t"){
+    If GetKeyState("CapsLock","p"){
         If GetKeyState("LShift","Down"){
             Send, {LShift Up}
         }
@@ -138,15 +145,8 @@ $v::
         Send v
 Return
 
-$i::
-    If GetKeyState("CapsLock","t")
-        SetCapsLockState, Off
-    else
-        Send i
-Return
-
 $a::
-    If GetKeyState("CapsLock","t"){
+    If GetKeyState("CapsLock","p"){
         Send {Right}
         SetCapsLockState, Off
     }
@@ -155,31 +155,64 @@ $a::
 Return
 
 $e::
-    If GetKeyState("CapsLock","t")
+    If GetKeyState("CapsLock","p")
         Send ^{Right}
     else
         Send e
 Return
 
 $b::
-    If GetKeyState("CapsLock","t")
+    If GetKeyState("CapsLock","p")
         Send ^{Left}
     else
         Send b
 Return
 
 $g::
-    If GetKeyState("CapsLock","t")
-        Send ^{Home}
+    If GetKeyState("CapsLock","p")
+        If (A_PriorHotkey <> "$g" or A_TimeSincePriorHotkey > 400)
+        {
+            KeyWait, g
+            Send, ^{End}
+            return
+        }
+        Else
+            Send, ^{Home}
     else
         Send g
 Return
-LShift & g::
-    If GetKeyState("CapsLock","t")
-        Send ^{End}
-    else
-        Send G
 
+$c::
+    If GetKeyState("CapsLock","p")
+        If (A_PriorHotkey <> "$c" or A_TimeSincePriorHotkey > 400)
+        {
+            KeyWait, c
+            Send, c
+            return
+        }
+        Else{
+            Send, {End}
+            Send, {LShift Down}
+            Send, {Home}
+            Send, {LShift Up}
+            Send, ^x
+        }
+    else
+        Send c
+Return
+
+$0::
+    If GetKeyState("CapsLock","p")
+        Send {Home}
+    else
+        Send 0
+Return
+
+$6::
+    If GetKeyState("CapsLock","p")
+        Send {End}
+    else
+        Send, {6}
 Return
 
 ; Windows Kep To FlowLauncher

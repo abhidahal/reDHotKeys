@@ -43,7 +43,7 @@ Space & p::MoveCurrentWindowToDesktop(9)
 Space & l::MoveCurrentWindowToRightDesktop()
 Space & h::MoveCurrentWindowToLeftDesktop()
 
-LWin & tab::switchDesktopToLastOpened()
+Space  & tab::switchDesktopToLastOpened()
 
 ; Redragon Volume Knob
 
@@ -58,4 +58,4 @@ LWin::winToFlowLauncher()
 !x::!F4
 
 ; CapsLock Vim Toggle
-CapsLock::vimToggleModeOnPress()
+CapsLock::vimToggleModeOnHold()
