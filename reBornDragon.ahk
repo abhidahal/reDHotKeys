@@ -354,7 +354,6 @@ _switchDesktopToTarget(targetDesktop)
 
 updateGlobalVariables()
 {
-
     mapDesktopsFromRegistry()
 }
 
@@ -363,7 +362,15 @@ switchDesktopByNumber(targetDesktop)
     global CurrentDesktop, DesktopCount
     updateGlobalVariables()
     _switchDesktopToTarget(targetDesktop)
+    ToolTip, %targetDesktop%, -99999, 9999999
+    SetTimer, RemoveToolTip, 2000
+    return
 }
+
+RemoveToolTip:
+    SetTimer, RemoveToolTip, Off
+    ToolTip
+return
 
 switchDesktopToLastOpened()
 {
