@@ -38,12 +38,12 @@ Space & t::MoveCurrentWindowToDesktop(5)
 Space & y::MoveCurrentWindowToDesktop(6)
 Space & u::MoveCurrentWindowToDesktop(7)
 Space & i::MoveCurrentWindowToDesktop(8)
-Space & p::MoveCurrentWindowToDesktop(9)
+Space & o::MoveCurrentWindowToDesktop(9)
 
 Space & l::MoveCurrentWindowToRightDesktop()
 Space & h::MoveCurrentWindowToLeftDesktop()
 
-Space  & tab::switchDesktopToLastOpened()
+Space & tab::switchDesktopToLastOpened()
 
 ; Redragon Volume Knob
 
