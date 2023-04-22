@@ -2,7 +2,7 @@ Space::Space
 RAlt::Enter
 
 ; Spaace Nagic Key For Virtual Windows
-Space & `::showAllVirtualDesktop()
+Space & `::showAllVirtualDesktop() 
 
 Space & Numpad1::switchDesktopByNumber(1)
 Space & Numpad2::switchDesktopByNumber(2)

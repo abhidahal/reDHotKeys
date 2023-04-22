@@ -362,7 +362,7 @@ switchDesktopByNumber(targetDesktop)
     global CurrentDesktop, DesktopCount
     updateGlobalVariables()
     _switchDesktopToTarget(targetDesktop)
-    ToolTip, %targetDesktop%, -99999, 9999999
+    ToolTip, %targetDesktop%, 9999, 9999
     SetTimer, RemoveToolTip, 2000
     return
 }
@@ -424,6 +424,9 @@ MoveCurrentWindowToDesktop(desktopNumber) {
     WinGet, activeHwnd, ID, A
     DllCall(MoveWindowToDesktopNumberProc, UInt, activeHwnd, UInt, desktopNumber - 1)
     switchDesktopByNumber(desktopNumber)
+    ToolTip, %targetDesktop%, 9999, 9999
+    SetTimer, RemoveToolTip, 2000
+    return
 }
 
 MoveCurrentWindowToRightDesktop()
