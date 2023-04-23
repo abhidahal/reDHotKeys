@@ -54,6 +54,7 @@ Knob  Action| Keys
 **Brightness** Manipulation|<kbd>Ctrl</kbd> + <kbd>Knob ↑</kbd> = <kbd>Brightness ↑</kbd><br><kbd>Ctrl</kbd> + <kbd>Knob ↓</kbd> = <kbd>Brightness ↓</kbd>
 **Mouse Scroll** Simulation|<kbd>Alt</kbd> + <kbd>Knob ↑</kbd> = <kbd>Scroll ↑</kbd><br><kbd>Alt</kbd> + <kbd>Knob ↓</kbd> = <kbd>Scroll ↓</kbd>
 **Mouse Movement** Manipulation on ScrollLock On<br>*(Toggle ScrollLock for mouse Movement by the knob)*|<kbd>Ctrl</kbd> + <kbd>Knob ↑</kbd> = <kbd>Mouse ↑</kbd><br><kbd>Ctrl</kbd> + <kbd>Knob ↓</kbd> = <kbd>Mouse ↓</kbd><br><kbd>Alt</kbd> + <kbd>Knob ↑</kbd> = <kbd>Mouse ↑</kbd><br><kbd>Alt</kbd> + <kbd>Knob ↓</kbd> = <kbd>Mouse ↓</kbd>
+**Mouse Click**|<kbd>Pause</kbd> = <kbd>Mouse Click</kbd>
 
 > Note : These will only work if your keyboard has a physical knob
 
