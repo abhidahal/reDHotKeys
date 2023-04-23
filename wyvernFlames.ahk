@@ -45,12 +45,16 @@ Space & h::MoveCurrentWindowToLeftDesktop()
 
 Space & tab::switchDesktopToLastOpened()
 
-; Redragon Volume Knob
+; Help tool tip
+Space & /::showHelpToolTip()
+
+; Redragon Volume Knob for Scroll and mouse movement
 
 ^Volume_Down::toggleScrollOrMouseY(30)
 ^Volume_Up::toggleScrollOrMouseY(-30)
 !Volume_Down::toggleScrollOrMouseX(-30)
 !Volume_Up::toggleScrollOrMousex(30)
+Pause::mouseClick()
 
 ; Windows Kep To FlowLauncher
 
@@ -59,4 +63,3 @@ LWin::winToFlowLauncher()
 
 ; CapsLock Vim Toggle
 CapsLock::vimToggleModeOnHold()
-Pause::mouseClick()

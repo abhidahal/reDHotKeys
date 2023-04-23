@@ -91,6 +91,25 @@ $d::
         Send d
 Return
 
+$c::
+    If GetKeyState("CapsLock","p")
+        If (A_PriorHotkey <> "$c" or A_TimeSincePriorHotkey > 400)
+        {
+            KeyWait, c
+            Send, c
+            return
+        }
+        Else{
+            Send, {End}
+            Send, {LShift Down}
+            Send, {Home}
+            Send, {LShift Up}
+            Send, ^x
+        }
+    else
+        Send c
+Return
+
 $o::
 
     If GetKeyState("CapsLock","p"){
@@ -145,15 +164,6 @@ $v::
         Send v
 Return
 
-$a::
-    If GetKeyState("CapsLock","p"){
-        Send {Right}
-        SetCapsLockState, Off
-    }
-    else
-        Send a
-Return
-
 $e::
     If GetKeyState("CapsLock","p")
         Send ^{Right}
@@ -180,25 +190,6 @@ $g::
             Send, ^{Home}
     else
         Send g
-Return
-
-$c::
-    If GetKeyState("CapsLock","p")
-        If (A_PriorHotkey <> "$c" or A_TimeSincePriorHotkey > 400)
-        {
-            KeyWait, c
-            Send, c
-            return
-        }
-        Else{
-            Send, {End}
-            Send, {LShift Down}
-            Send, {Home}
-            Send, {LShift Up}
-            Send, ^x
-        }
-    else
-        Send c
 Return
 
 $0::
@@ -391,11 +382,6 @@ switchDesktopByNumber(targetDesktop)
     return
 }
 
-RemoveToolTip:
-    SetTimer, RemoveToolTip, Off
-    ToolTip
-return
-
 switchDesktopToLastOpened()
 {
     global CurrentDesktop, DesktopCount, LastOpenedDesktop
@@ -491,3 +477,15 @@ deleteVirtualDesktop()
     CurrentDesktop--
     OutputDebug, [delete] desktops: %DesktopCount% current: %CurrentDesktop%
 }
+
+showHelpToolTip(){
+    ToolTip, Space Functions : `nSpace + ? : Show this help`nSpace + ` : Show all virtual Desktops`nSpace + Tab : Switch to last opened desktop`nSpace + 1-9 : Switch to virtual desktop 1-9`nSpace + J/K : Switch to left/right virtual desktop`nSpace + +/_ : Create or Delete Current Virtual Desktop`nSpace + Q-O : Move current window to virtual desktop 1-9`nSpace + H/L : Move current window to left/right virtual desktop`n`nCapsLock Functions : `nCapsLock + J/K/H/L : Move The Cursor Down/Up/Left/Right`nCapsLock + X : Delete`nCapsLock + Z : Backspace`nCapsLock + D : Delete the Entire Line`nCapsLock + C*2 : Delete the Entire Text in a Line`nCapsLock + O : Enter in a New Line`nCapsLock + O*2 : Enter in a New Line Above`nCapsLock + U/R : Undo/Redo`nCapsLock + Y/P : Copy/Paste`nCapsLock + V : Visual Mode`nCapsLock + E/B : Move the Cursor to End/Begining of a Word`nCapsLock + ^/0 : Move the Cursor to End/Begining of the Line`nCapsLock + G/G*2 : Move the Cursor to End/Begining of the File`n`nKnob Functions : `nCtrl + Knob + ↑/↓ : Scroll Up/Down`nAlt + Knob + ↑/↓ : Turn Brightness Up/Down`nCtrl + Knob + ↑/↓ (ScrollLockOn) : Move the Mouse Up/Down`nAlt + Knob + ↑/↓ (ScrollLockOn) : Move the Mouse Left/Right`n`nOther Functions : `nLWin : Flowlauncer hotkey when FlowLauncher is active`nAlt + X : Close Current Window`nRAlt : Enter
+
+    SetTimer, RemoveToolTip, 2000
+    return
+}
+
+RemoveToolTip:
+    SetTimer, RemoveToolTip, Off
+    ToolTip
+return

@@ -18,11 +18,11 @@ Space Action | Keys.
 **Switch** to the virtual desktop on the **left**<br>*(auto-cycles from the first to the last desktop)*|<kbd>Space</kbd> + <kbd>J</kbd>
 **Switch** to the virtual desktop on the **right**<br>*(auto-cycles from the last to the first desktop)*|<kbd>Space</kbd> + <kbd>K</kbd>
 **Switch back** to the last desktop used|<kbd>Space</kbd> + <kbd>Tab</kbd>
-**Create** a new virtual desktop|**<kbd>Space</kbd> + <kbd>+</kbd>**
-**Delete** the current virtual desktop|<kbd>Space</kbd> + <kbd>-</kbd>
+**Create** a new virtual desktop<br>**Delete** the current virtual desktop|<kbd>Space</kbd> + <kbd>+</kbd><br><kbd>Space</kbd> + <kbd>-</kbd>
 **Move** the current window to another desktop, then switch to it<br>*Keys <kbd>Q</kbd>, <kbd>W</kbd>, etc. correspond to **1st, 2nd, etc.** desktops*|<kbd>Space</kbd> + <kbd>Q</kbd><br><kbd>Space</kbd> + <kbd>W</kbd><br>...<br><kbd>Space</kbd> + <kbd>O</kbd>
 **Move** the current window to the previous or the next desktop, then switch to it|<kbd>Space</kbd> + <kbd>H</kbd><br><kbd>Space</kbd> + <kbd>L</kbd>
 **Dispaly** all the virtual windows opened |<kbd>Space</kbd> + <kbd>`</kbd>
+**Dispaly** tooltip for all the commands |<kbd>Space</kbd> + <kbd>?</kbd>
 
 > Note : space Key function normally if it is not pressed together with the above hot keys
 
@@ -39,9 +39,10 @@ CapsLock Toggle Action | Keys(Holding Capslock)
 **Copy** and **Paste** |<kbd>Y</kbd> = <kbd>Copy</kbd><br><kbd>P</kbd> = <kbd>Paste</kbd>
 **Simulate** delete and backspace<br>*(While deleting whole line it copies it to clipboard)*|<kbd>X</kbd> = <kbd>Delete</kbd><br><kbd>Z</kbd> = <kbd>Backspace</kbd><br><kbd>D</kbd> = <kbd>Delete Whole Line</kbd><br><kbd>(double)c</kbd> = <kbd>Delete Whole Line and stay on the same line</kbd>
 **Navigating** Cursor position|<kbd>E</kbd> = <kbd>End of the word</kbd><br><kbd>B</kbd> = <kbd>BEginning of the word</kbd>
-**Cursor** Placement into normal mode<br>*(going back to normal mode with cursor position )*|<kbd>A</kbd> = <kbd>End of the current letter</kbd><br><kbd>I</kbd> = <kbd>In the current position</kbd><br><kbd>0</kbd> = <kbd>In the Beginning of the line</kbd><br><kbd>^</kbd> = <kbd>In the End of the line</kbd>
+**Cursor** Placement into normal mode<br>*(going back to normal mode with cursor position )*|<kbd>0</kbd> = <kbd>In the Beginning of the line</kbd><br><kbd>^</kbd> = <kbd>In the End of the line</kbd>
+**Visual Mode**<br>*(going to visual mode to select )*|<kbd>V</kbd> = <kbd>SelectionMode</kbd> 
 
-> Note : CapsLock will toogle these commands, so when caps is on these keys will act as above.
+> Note : Holding CapsLock will toogle these commands, so when caps is on these keys will act as above.
 > YOU WILL NOT BE ABLE TO USE THE NORMAL CAPSLOCK FUNCTIONALITY
 
 #
@@ -52,6 +53,8 @@ Knob  Action| Keys
 --- | :-:
 **Brightness** Manipulation|<kbd>Ctrl</kbd> + <kbd>Knob ↑</kbd> = <kbd>Brightness ↑</kbd><br><kbd>Ctrl</kbd> + <kbd>Knob ↓</kbd> = <kbd>Brightness ↓</kbd>
 **Mouse Scroll** Simulation|<kbd>Alt</kbd> + <kbd>Knob ↑</kbd> = <kbd>Scroll ↑</kbd><br><kbd>Alt</kbd> + <kbd>Knob ↓</kbd> = <kbd>Scroll ↓</kbd>
+**Mouse Movement** Manipulation on ScrollLock On<br>*(Toggle ScrollLock for mouse Movement by the knob)*|<kbd>Ctrl</kbd> + <kbd>Knob ↑</kbd> = <kbd>Mouse ↑</kbd><br><kbd>Ctrl</kbd> + <kbd>Knob ↓</kbd> = <kbd>Mouse ↓</kbd><br><kbd>Alt</kbd> + <kbd>Knob ↑</kbd> = <kbd>Mouse ↑</kbd><br><kbd>Alt</kbd> + <kbd>Knob ↓</kbd> = <kbd>Mouse ↓</kbd>
+
 > Note : These will only work if your keyboard has a physical knob
 
 #
