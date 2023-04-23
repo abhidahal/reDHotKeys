@@ -2,6 +2,15 @@
 
 **reBornDragon** is a keyboard script that focuses on boosting productivity on Windows by giving similar features of vim and Tmux which are popular on linux and Windows key remapped to flow launcer hotkey (Alt + Space) and other productivity Hotkeys. This script gives Magic functions to space bar which controls the virtual windows screens and Magic Hold function for CapsLock which toggles vim like command mode. This script was made for Redragon K596 keyboard but will work with any keyboard.
 
+## 🪄 Features
+
+- Space Functions simulate Tmux like functions for changing virtual desktops.
+- Moving application to desired virtual desktop with assigned keys.
+- CapsLock Functions simulate vim features.
+- Brightness Manipulation and scroll Simulation using Knob/Slider
+- ScrollLock Toggle with Knob/Slider simulates mouse Movement.
+- Displays Virtual desktop Number in Bottom Right of screen.
+
 ## ⚙️ Installation
 
 - Install [AutoHotKeys](https://www.autohotkey.com/) v1.1.33+
