@@ -19,7 +19,7 @@ SetKeyDelay, 75
 mapDesktopsFromRegistry()
 OutputDebug, [loading] desktops: %DesktopCount% current: %CurrentDesktop%
 
-#Include %A_ScriptDir%\wyvernFlames.ahk
+#Include %A_ScriptDir%\dragonFlames.ahk
 return
 
 ; CapsLock Vim Toggle
