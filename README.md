@@ -1,6 +1,6 @@
-<h1> 🔥reBornDragon</h1>
+<h1> 🔥reDHotKeys</h1>
 
-**reBornDragon** is a keyboard script that focuses on boosting productivity on Windows by giving similar features of vim and Tmux which are popular on linux and Windows key remapped to flow launcer hotkey (Alt + Space) and other productivity Hotkeys. This script gives Magic functions to space bar which controls the virtual windows screens and Magic Hold function for CapsLock which toggles vim like command mode. This script was made for Redragon K596 keyboard but will work with any keyboard.
+**reDHotKeys** is a keyboard script for a reDragon keyboard(works will all keyboards) that focuses on boosting productivity on Windows by giving similar features of vim and Tmux which are popular on linux and Windows key remapped to flow launcer hotkey (Alt + Space) and other productivity Hotkeys. This script gives Magic functions to space bar which controls the virtual windows screens and Magic Hold function for CapsLock which toggles vim like command mode. This script was made for Redragon K596 keyboard but will work with any keyboard.
 
 ## 🪄 Features
 
