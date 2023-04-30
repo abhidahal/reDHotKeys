@@ -49,6 +49,7 @@ CapsLock Toggle Action | Keys(Holding Capslock)
 **Simulate** delete and backspace<br>*(While deleting whole line it copies it to clipboard)*|<kbd>X</kbd> = <kbd>Delete</kbd><br><kbd>Z</kbd> = <kbd>Backspace</kbd><br><kbd>D</kbd> = <kbd>Delete Whole Line</kbd><br><kbd>(double)c</kbd> = <kbd>Delete Whole Line and stay on the same line</kbd>
 **Navigating** Cursor position|<kbd>E</kbd> = <kbd>End of the word</kbd><br><kbd>B</kbd> = <kbd>BEginning of the word</kbd>
 **Cursor** Placement into normal mode<br>*(going back to normal mode with cursor position )*|<kbd>0</kbd> = <kbd>In the Beginning of the line</kbd><br><kbd>^</kbd> = <kbd>In the End of the line</kbd>
+**Go to Defination** in vs code|<kbd>F</kbd> = <kbd>Go to Defination</kbd> 
 **Visual Mode**<br>*(going to visual mode to select )*|<kbd>V</kbd> = <kbd>SelectionMode</kbd> 
 
 > Note : Holding CapsLock will toogle these commands, so when caps is on these keys will act as above.
